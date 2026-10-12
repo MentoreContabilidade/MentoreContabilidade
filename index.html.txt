@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentore Contabilidade e Auditoria | Fortaleza - CE</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0d233a;
+      --secondary-color: #1a3a5c;
+      --accent-color: #d4af37;
+      --light-bg: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #333;
+    }
+
+    .bg-primary-custom {
+      background-color: var(--primary-color) !important;
+    }
+
+    .bg-secondary-custom {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .text-accent {
+      color: var(--accent-color) !important;
+    }
+
+    .btn-accent {
+      background-color: var(--accent-color);
+      color: #0d233a;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-accent:hover {
+      background-color: #b89628;
+      color: #fff;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(13, 35, 58, 0.85), rgba(13, 35, 58, 0.85)), 
+                  url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      padding: 100px 0;
+      color: #fff;
+    }
+
+    .card-service {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 4px solid var(--accent-color);
+    }
+
+    .card-service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .icon-box {
+      width: 60px;
+      height: 60px;
+      background-color: rgba(212, 175, 55, 0.15);
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .badge-crc {
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">
+        <i class="bi bi-briefcase-fill text-accent me-2"></i>Mentore <span class="fw-light fs-6 text-light">Contabilidade</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item ms-lg-3">
+            <a href="https://wa.me/5585992687471" target="_blank" class="btn btn-accent btn-sm px-3 py-2">
+              <i class="bi bi-whatsapp me-1"></i> Falar com Especialista
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center text-lg-start">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="badge badge-crc mb-3"><i class="bi bi-patch-check-fill me-1"></i> CRC: CE-002958/O</span>
+          <h1 class="display-4 fw-bold mb-3">Gestão Contábil Estratégica e Auditoria para a sua Empresa</h1>
+          <p class="lead mb-4">Soluções completas em contabilidade, consultoria e auditoria tributária. A parceria que seu negócio precisa para crescer com segurança e conformidade fiscal.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a href="#contato" class="btn btn-accent btn-lg px-4"><i class="bi bi-envelope-fill me-2"></i> Solicitar Orçamento</a>
+            <a href="#servicos" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-list-check me-2"></i> Nossos Serviços</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h6 class="text-uppercase text-accent fw-bold">Sobre a Mentore</h6>
+          <h2 class="fw-bold mb-4">Tradição, Excelência e Confiança Empresarial</h2>
+          <p class="text-muted">Fundada em julho de 2019 na cidade de Fortaleza - CE, a <strong>Mentore Contabilidade e Auditoria LTDA</strong> atua na prestação de serviços contábeis e consultoria tributária de alto nível.</p>
+          <p class="text-muted">Nosso compromisso é orientar empresas a alcançarem a máxima eficiência fiscal e financeira, oferecendo um atendimento personalizado focado na segurança do seu patrimônio.</p>
+          
+          <div class="row g-3 mt-2">
+            <div class="col-6">
+              <div class="p-3 border rounded bg-light">
+                <h3 class="fw-bold text-primary-custom mb-1">+7 Anos</h3>
+                <small class="text-muted">De atuação e experiência no mercado</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border rounded bg-light">
+                <h3 class="fw-bold text-primary-custom mb-1">Simples</h3>
+                <small class="text-muted">Especialistas em Gestão e Planejamento Tributário</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm p-4 bg-light">
+            <h5 class="fw-bold mb-3 text-primary-custom"><i class="bi bi-shield-check me-2 text-accent"></i>Dados Corporativos</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="py-2 border-bottom"><strong>Razão Social:</strong> Mentore Contabilidade e Auditoria LTDA</li>
+              <li class="py-2 border-bottom"><strong>CNPJ:</strong> 34.144.772/0001-19</li>
+              <li class="py-2 border-bottom"><strong>Registro Operacional:</strong> CRC CE-002958/O</li>
+              <li class="py-2 border-bottom"><strong>Quadro de Sócios:</strong>
+                <br><small class="text-muted">• Jose Orlando Belchior Ribeiro Filho (Sócio-Administrador)</small>
+                <br><small class="text-muted">• Fernanda da Costa Ribeiro (Sócio)</small>
+              </li>
+              <li class="pt-2"><strong>Localização:</strong> Aldeota, Fortaleza - CE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center max-width-700 mx-auto mb-5">
+        <h6 class="text-uppercase text-accent fw-bold">Áreas de Atuação</h6>
+        <h2 class="fw-bold">Nossas Atividades e Serviços</h2>
+        <p class="text-muted">Oferecemos suporte completo para manter a regularidade e o crescimento saudável do seu negócio.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Serviço 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 shadow-sm">
+            <div class="icon-box">
+              <i class="bi bi-calculator"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Contabilidade Empresarial</h5>
+            <p class="text-muted small">Escrituração contábil completa, emissão de balanços, balancetes e demonstrações financeiras em conformidade com as normas vigentes.</p>
+            <span class="badge bg-secondary text-start mt-auto w-fit">CNAE: 69.20-6-01</span>
+          </div>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 shadow-sm">
+            <div class="icon-box">
+              <i class="bi bi-search"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Auditoria Contábil e Tributária</h5>
+            <p class="text-muted small">Análise rigorosa das operações contábeis e fiscais para identificação de divergências, mitigação de riscos e prevenção de autuações.</p>
+            <span class="badge bg-secondary text-start mt-auto w-fit">CNAE: 69.20-6-02</span>
+          </div>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-4 shadow-sm">
+            <div class="icon-box">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Consultoria Tributária</h5>
+            <p class="text-muted small">Planejamento tributário estratégico para identificação de incentivos fiscais e otimização dos impostos pagos dentro da lei.</p>
+            <span class="badge bg-secondary text-start mt-auto w-fit">CNAE: 69.20-6-02</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section id="diferenciais" class="py-5 bg-primary-custom text-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-4">
+          <h2 class="fw-bold mb-3">Por que escolher a Mentore?</h2>
+          <p class="text-light opacity-75">Garantimos tranquilidade para que você possa focar exclusivamente na gestão e expansão do seu negócio.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="row g-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-check-circle-fill fs-3 text-accent"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Atendimento Personalizado</h6>
+                  <p class="small text-light opacity-75 mb-0">Atendimento direto, ágil e focado na realidade específica da sua empresa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-shield-lock-fill fs-3 text-accent"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Segurança Jurídica</h6>
+                  <p class="small text-light opacity-75 mb-0">Garantia de conformidade fiscal e contábil com acompanhamento técnico contínuo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-file-earmark-bar-graph-fill fs-3 text-accent"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Relatórios Claros</h6>
+                  <p class="small text-light opacity-75 mb-0">Informações precisas para apoiar na tomada de decisões estratégicas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-clock-history fs-3 text-accent"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">Cumprimento de Prazos</h6>
+                  <p class="small text-light opacity-75 mb-0">Entrega pontual de todas as obrigações acessórias e impostos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato e Localização -->
+  <section id="contato" class="py-5">
+    <div class="container py-4">
+      <div class="row g-5">
+        <!-- Informações e Mapa -->
+        <div class="col-lg-6">
+          <h6 class="text-uppercase text-accent fw-bold">Fale Conosco</h6>
+          <h2 class="fw-bold mb-4">Onde Estamos e Contatos</h2>
+          
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <div class="icon-box mb-0 flex-shrink-0">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Endereço Comercial</h6>
+              <p class="text-muted mb-0">Av. Desembargador Moreira, 1300 - Sala 1104 T- Norte<br>Bairro Aldeota, Fortaleza - CE, CEP: 60170-002</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <div class="icon-box mb-0 flex-shrink-0">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Telefone / WhatsApp</h6>
+              <p class="text-muted mb-0">(85) 99268-7471</p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <div class="icon-box mb-0 flex-shrink-0">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">E-mail</h6>
+              <p class="text-muted mb-0">poliana@tmaenergiasolar.com</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-2 pt-2">
+            <a href="https://wa.me/5585992687471" target="_blank" class="btn btn-success px-4"><i class="bi bi-whatsapp me-2"></i>Iniciar WhatsApp</a>
+            <a href="https://maps.google.com/?q=Avenida+Desembargador+Moreira+1300+Aldeota+Fortaleza+CE" target="_blank" class="btn btn-outline-secondary px-4"><i class="bi bi-map-fill me-2"></i>Ver no Google Maps</a>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm p-4">
+            <h4 class="fw-bold mb-4 text-primary-custom">Envie uma Mensagem</h4>
+            <form>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Seu nome ou nome da empresa" required>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold">E-mail</label>
+                  <input type="email" class="form-control" placeholder="seu@email.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold">Telefone/WhatsApp</label>
+                  <input type="tel" class="form-control" placeholder="(00) 00000-0000" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Assunto de Interesse</label>
+                <select class="form-select">
+                  <option selected>Selecione um serviço</option>
+                  <option>Contabilidade Empresarial</option>
+                  <option>Consultoria e Auditoria Tributária</option>
+                  <option>Abertura/Migração de Empresa</option>
+                  <option>Outros Assuntos</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Mensagem</label>
+                <textarea class="form-control" rows="4" placeholder="Como podemos ajudar o seu negócio?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary-custom text-white w-100 py-2 fw-bold">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-primary-custom text-white py-4 border-top border-secondary">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center g-3">
+        <div class="col-md-6">
+          <h5 class="fw-bold mb-1">Mentore Contabilidade e Auditoria LTDA</h5>
+          <small class="text-light opacity-75">CNPJ: 34.144.772/0001-19 | CRC: CE-002958/O</small>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <small class="text-light opacity-75">&copy; Mentore Contabilidade. Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
